@@ -1,0 +1,15 @@
+name: 'Setup EdgeDB'
+description: 'Setup an EdgeDB database'
+author: 'Fantix King <fantix.king@gmail.com>'
+branding:
+  icon: 'database'
+  color: 'blue'
+inputs:
+  # See https://hub.docker.com/r/edgedb/edgedb/tags for supported versions
+  edgedb version:
+    description: 'Version of EdgeDB to use'
+    required: false
+    default: 'latest'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
